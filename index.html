@@ -7,8 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mi-portafolio-web</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body >
+
+   <div class="nav-overflow" data-bs-toggle="nav-overflow">
+      <ul class="nav nav-underline justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#hero">Hero</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+  <section id="hero" class="py-5">
+  <div class="container">
+    <!-- La fila (row) pone los elementos uno al lado del otro en pantallas medianas/grandes -->
+    <div class="row align-items-center">
+
+      <!-- COLUMNA IZQUIERDA: Tu presentación -->
+      <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+        <img src="/src/pictures/foto1.jpeg" alt="Mi foto" class="rounded-circle mb-3 shadow" width="150">
+        <h1 style="font-family: sans-serif;">Hola, soy <span>Ana Cristina Pérez López</span></h1>
+        <p class="lead text-muted">Desarrolladora Java Full Stack Jr. | Ingeniera en Sistemas</p>
+        <p class="mb-4">Transformando ideas en experiencias web funcionales. Actualmente potenciando mis habilidades en Java, Spring Boot y desarrollo Frontend en Generation México.</p>
+        
+        <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+          <a href="#proyectos" class="btn mi-btn-custom btn-outline-dark btn-lg">Ver mis proyectos</a>
+          <a href="#contacto" class="btn mi-btn-custom btn-outline-dark btn-lg">Contáctame</a>
+        </div>
+      </div>
+
+      <!-- COLUMNA DERECHA: La animación de tarjetas -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="wrapper">
+          <div><img src="/src/pictures/imagen4.jpeg" alt="Proyecto 1"></div>
+          <div><img src="/src/pictures/imagen2.jpeg" alt="Proyecto 2"></div>
+          <div><img src="/src/pictures/imagen6.jpeg" alt="Proyecto 3"></div>
+          <div><img src="/src/pictures/imagen3.jpeg" alt="Proyecto 4"></div>
+          <div><img src="/src/pictures/imagen8.jpeg" alt="Proyecto 5"></div>
+          <div><img src="/src/pictures/imagen5.jpeg" alt="Proyecto 6"></div>
+          <div><img src="/src/pictures/imagen7.jpeg" alt="Proyecto 7"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+  <script type="module" src="/src/main.js"></script>
   </body>
 </html>
