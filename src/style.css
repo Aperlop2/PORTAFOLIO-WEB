@@ -1,5 +1,5 @@
 body{
-  background-color: #F4E9DD;
+  background-color: #EFE3D5;
 }
 
 /* Color de las letras en los navs */
@@ -29,4 +29,13 @@ span{
   color: white ;
 }
 
+.titulo{
+  padding-top: 50px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: #A65A3A;
+}
 
+.bg-custom-brown{
+  background-color: #F4E9DD !important;
+  border-color: #F4E9DD !important;
+}
