@@ -1,0 +1,11 @@
+
+body{
+    background-color: white;
+    color:black;
+
+}
+
+body.oscuro {
+    background-color: black;
+    color: white;
+}
