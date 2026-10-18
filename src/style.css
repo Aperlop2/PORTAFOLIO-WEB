@@ -1,6 +1,10 @@
-body{
-  background-color: #EFE3D5;
-}
+   body {
+     background-color: #EFE3D5;
+     cursor: url('/dry.svg'), auto;
+   }
+   a, button {
+     cursor: url('/dry.svg'), pointer;
+   }
 
 /* Color de las letras en los navs */
 .nav-overflow .nav-link {
@@ -36,6 +40,35 @@ span{
 }
 
 .bg-custom-brown{
-  background-color: #F4E9DD !important;
-  border-color: #F4E9DD !important;
+  background-color: #DDBFA5 !important;
+  border-color: #DDBFA5 !important;
+  border-radius: 40px;
 }
+
+.front{
+  width: 40px;
+  height: 40px;
+}
+
+.back{
+   width: 40px;
+  height: 40px;
+}
+
+.bd{
+   width: 40px;
+   height: 40px;
+}
+
+.card{
+  border-radius: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #DDBFA5;
+  border-color: #DDBFA5
+}
+
+.contenido{
+  padding-bottom: 40px; 
+}
+
