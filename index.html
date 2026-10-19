@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <!--pantalla-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mi-portafolio-web</title>
@@ -64,7 +67,7 @@
 
     </div>
 
-    <section class="sobre-mi row">
+    <section id="sobre-mi" class="sobre-mi row">
       <div class="col-6 flex-column align-items-start">
         <h3 class="titulo">Sobre mí</h3>
         <p class="lead text-muted">Soy Ingeniera en Sistemas Computacionales, con pasión por el 
@@ -143,14 +146,67 @@
       </div>
     </section>
 
-    <section></section>
+    <section id="habilidades" class="habilidades py-5">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="referencias mb-0" style="font-family: Caveat; line-height: 1;">Lo que uso</h5>
+          <h3 class="titulo mt-1">Habilidades</h3>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 p-4">
+              <div class="carta-cuerpo card-body ">
+                <h4 class="titulo mt-1">Frontend</h3>
+                <p class="font-monospace mb-0 text-muted">Interfaces responsicas y fáciles de usar</p>
+                <div class="habilidades-front flex-direction-row">
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">HTML</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">CSS</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">JavaScript</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Bootstrap</div>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 p-4">
+              <div class="carta-cuerpo card-body ">
+                <h4 class="titulo mt-1">Backend</h3>
+                <p class="font-monospace mb-0 text-muted">Lógica del lado del servidor y servicios</p>
+                <div class="habilidades-front flex-direction-row">
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Java</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Spring Boot</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Node.js</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">APIs REST</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">PHP</div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 p-4">
+              <div class="carta-cuerpo card-body ">
+                <h4 class="titulo mt-1">Datos y herramientas</h3>
+                <p class="font-monospace mb-0 text-muted">Bases de datos y flujo de trabajo</p>
+                <div class="habilidades-front flex-direction-row">
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">MySQL</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">MongoDB</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Firebase</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Git y GitHub</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">XAMPP</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Figma</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">POSTMAN</div>
+                  <div class="card d-inline-block text-center px-4 py-2" style="border-radius: 30px; background-color: #F4E9DD;">Google Cloud</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </section>
+
   </div>
-</section>
-
-
-<section id="sobre-mi" class="about" >
-  
-
 </section>
     
   <script type="module" src="/src/main.js"></script>

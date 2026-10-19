@@ -72,3 +72,19 @@ span{
   padding-bottom: 40px; 
 }
 
+.referencias{
+  color: #C98F66;
+  margin-bottom: 0;
+}
+
+.carta-cuerpo{
+  padding-top: 0 !important;
+}
+
+.frontend{
+  background-color: #DDBFA5;
+}
+
+.habilidades{
+  background-color: #3A1E12;
+}
