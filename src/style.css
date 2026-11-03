@@ -88,3 +88,133 @@ span{
 .habilidades{
   background-color: #3A1E12;
 }
+
+.habilidades-front {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;  /* espacio entre badges */
+  margin-top: 1rem;
+}
+
+.card.card-projects{
+  background-color: #EFE3D5 !important;
+  border-color: #EFE3D5 !important;
+  border-radius: 40px;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 220px; /* 👈 Todas las imágenes tendrán esta altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #A65A3A; /* Color Canela de fondo */
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Mantiene la proporción sin deformar */
+}
+
+.proyects-section{
+  background-color: #C98F66;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-title {
+  font-family: 'Cormorant Garamond', serif;
+  color: #A65A3A;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+.btn-proyecto {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #A65A3A; /* Color Canela */
+  color: #F4E9DD; /* Texto Crema */
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-top: auto; /* Empuja el botón al fondo */
+  align-self: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projects:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn-proyecto:hover {
+  background-color: #3A1E12; /* Cambia a Café oscuro */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 30, 18, 0.3);
+}
+
+.btn-proyecto .icono {
+  font-size: 1.1rem;
+}
+
+/* Versión secundaria (outline) para proyectos en desarrollo */
+.btn-proyecto.btn-secundario {
+  background-color: transparent;
+  color: #A65A3A;
+  border: 2px solid #A65A3A;
+}
+
+.btn-proyecto.btn-secundario:hover {
+  background-color: #A65A3A;
+  color: #F4E9DD;
+}
+
+.badge-tecnologia {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #DDBFA5;
+  font-size: 0.9rem;
+}
+
+
+.badge-habilidades {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #A65A3A;
+  font-size: 0.9rem;
+  color: #F4E9DD;
+}
+
+
+
+.card-habilidadestec{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #EFE3D5;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+.card-habilidadestec:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}

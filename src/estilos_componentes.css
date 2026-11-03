@@ -44,11 +44,11 @@
     &:nth-child(6) { --card-i: 6; z-index: 1; }
     &:nth-child(7) { --card-i: 7; z-index: 0; }
 
-    /* 👇 EFECTO HOVER - ESTO SÍ FUNCIONA */
+    /* EFECTO HOVER - ESTO SÍ FUNCIONA */
     &:hover {
       offset-anchor: 50% 10%;
-      opacity: 1; /* 👈 Se vuelve más visible al hacer hover */
-      z-index: 10; /* 👈 La tarjeta hover queda arriba */
+      opacity: 1; /*  Se vuelve más visible al hacer hover */
+      z-index: 10; /*  La tarjeta hover queda arriba */
       
       & + div { --arc-shift: calc(var(--arc-shift-delta) * 3); }
       & + div + div { --arc-shift: calc(var(--arc-shift-delta) * 2); }
@@ -69,7 +69,7 @@
   }
 }
 
-/* 👇 MEDIA QUERY para pantallas muy pequeñas */
+/* MEDIA QUERY para pantallas muy pequeñas */
 @media (max-width: 768px) {
   @layer demo {
     .wrapper {
@@ -81,7 +81,7 @@
   }
 }
 
-/* 👇 BOTONES - Siempre arriba */
+/* BOTONES - Siempre arriba */
 .hero-buttons, 
 .btn-primary, 
 .btn-secondary {
