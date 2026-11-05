@@ -310,21 +310,34 @@
             <a href="mailto:anacristinaperez.dev01@gmail.com" class="btn btn-outline-light">anacristinaperez.dev01@gmail.com</a>
           </div>
 
-          <div class="col-6 flex-column">
-            <div class="form-field">
-             <label for="exampleFormControlTextarea1" class="form-label">Nombre</label>
-             <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tu nombre"></textarea>
-            </div>
+          <div class="col-md-6">
+            <!-- 1. Aquí va la etiqueta <form> con tu URL de Formspree -->
+            <form action="https://formspree.io/f/mrppjrlp" method="POST" class="p-4 rounded-4 shadow-sm" style="background-color: #3D2317;">
+              
+              <!-- Campo: Nombre (Usamos input type="text", no textarea) -->
+              <div class="mb-3">
+                <label for="nombre" class="form-label fw-bold">Nombre</label>
+                <input type="text" class="form-control rounded-pill" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+              </div>
 
-            <div class="form-field">
-             <label for="exampleFormControlTextarea1" class="form-label">Correo</label>
-             <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="tucorreo@ejemplo.com"></textarea>
-            </div>
+              <!-- Campo: Correo (Usamos input type="email" para validación automática) -->
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Correo electrónico</label>
+                <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+              </div>
 
-            <div class="form-field">
-              <label for="exampleFormControlTextarea2" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="exampleFormControlTextarea2" placeholder="Cuéntame sobre tu proyecto o vacante" rows="4"></textarea>
-            </div>
+              <!-- Campo: Mensaje (Aquí sí va el textarea) -->
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-bold">Mensaje</label>
+                <textarea class="form-control rounded-4" id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto o vacante..." required></textarea>
+              </div>
+
+              <!-- Botón de envío -->
+              <button type="submit" class="btn w-100 rounded-pill py-2 fw-bold" style="background-color: #DDBFA5; color: #333;">
+                Enviar mensaje 
+              </button>
+
+            </form>
           </div>
         </div>  
 
